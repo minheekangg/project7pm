@@ -34,6 +34,9 @@
             node.style.top = xy[1] + 'px';
             node.style.left = xy[0] + 'px';
             node.setAttribute('src', pickRandomImage());
+            node.addEventListener('click', ()=>{
+                console.log('clicked!')
+            })
             canvas.appendChild(node);
         };
         for (var i = 0; i < total_number_of_images; i++) {
