@@ -1,0 +1,22 @@
+body {
+    background-color: lavender;
+    margin: 0;
+}
+
+#x {
+    height: 50vh;
+    margin-top: 50vh;
+    margin-left: -10px;
+    margin-right:-10px;
+    position: relative;
+}
+
+#x .icon {
+    position: absolute;
+    z-index: 2;
+}
+
+.content {
+    position: absolute;
+
+}
