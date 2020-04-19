@@ -15,6 +15,7 @@ body {
 #x .icon {
     position: absolute;
     z-index: 2;
+    cursor: url('http://static.tumblr.com/tensqk8/rYanq05el/04.png'), auto;
 }
 
 .content {
@@ -29,6 +30,7 @@ body {
     text-align: center;
     padding: 30px;
 }
+
 
 #reveal1 {
 		opacity: 0;

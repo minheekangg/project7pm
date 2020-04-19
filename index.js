@@ -35,7 +35,12 @@
             node.style.left = xy[0] + 'px';
             node.setAttribute('src', pickRandomImage());
             node.addEventListener('click', ()=>{
-                console.log('clicked!')
+                const audio = document.querySelector('audio');
+
+                // PLAY SOUND
+                if (!audio) return
+                audio.currentTime = 0
+                audio.play() 
             })
             canvas.appendChild(node);
         };
