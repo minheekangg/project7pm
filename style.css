@@ -1,5 +1,5 @@
 body {
-    background-color: lavender;
+    /* background-color: lavender; */
     margin: 0;
     font-family: 'Montserrat';
 }
@@ -18,38 +18,58 @@ body {
     cursor: url('http://static.tumblr.com/tensqk8/rYanq05el/04.png'), auto;
 }
 
-.content {
-    position: absolute;
-    /* border: 1px solid red; */
-    background-color: lavender;
-    top: calc(40% - 100px);
-    left: calc(50% - 250px);
-    width: 500px;
-    height: auto;
-    z-index: 3;
-    text-align: center;
-    padding: 30px;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    height: calc(100vh - 20px);
 }
 
+nav {
+    position: fixed;
+    border-top: 10px solid lavender;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+}
 
-#reveal1 {
-		opacity: 0;
-		-webkit-transform: scale(0.9);
-			 -moz-transform: scale(0.9);
-				-ms-transform: scale(0.9);
-				 -o-transform: scale(0.9);
-						transform: scale(0.9);
-		-webkit-transition: all 1s ease-in-out;
-			 -moz-transition: all 1s ease-in-out;
-				-ms-transition: all 1s ease-in-out;
-				 -o-transition: all 1s ease-in-out;
-						transition: all 1s ease-in-out;
-	}
-	#reveal1.visible {
-		opacity: 1;
-		-webkit-transform: none;
-			 -moz-transform: none;
-				-ms-transform: none;
-				 -o-transform: none;
-						transform: none;
-	}
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* width: calc(100vw - 20px); */
+    width: 100vw;
+    margin: auto;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.nav-content > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    float: right
+}
+
+.nav-content > ul > a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+#main {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+#main > h1 {
+    font-size: 40px;
+}
+
+#product {
+    border: 1px solid red;
+    height: 100vh;
+}

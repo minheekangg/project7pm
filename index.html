@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/838/310/398/clapping-computer-icons-percussion-applause.jpg" />
         
         <link rel="stylesheet" type="text/css" href="style.css" />
@@ -11,16 +12,34 @@
     </head>
 
     <body>
-        <div id="x"></div>
-        <img src="#" class="icon" hidden="hidden" id="template" />
-            <div class="content">
+        <nav>
+            <div class="nav-content">
+                <div class="logo">logo placeholder</div>
+                <ul>
+                    <a href="#home">home</a>
+                    <!-- <a href="#about">about</a> -->
+                    <a href="#product">products</a>
+                </ul>
+            </div>  
+        </nav>
+        
+        <div class="container" id="home">
+            <div class="content" id="main">
                 <h1>PROJECT7PM</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 
                 <p>call to action here.</p>
             </div>
             <audio data-key="65" src="sounds/crowd5.wav"></audio>
+        </div>
+        
+        <div id="product">
+            <div class="product-container">
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+            </div>
+        </div>
     </body>
 </html>
