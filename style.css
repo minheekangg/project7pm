@@ -94,14 +94,13 @@ nav {
 }
 
 #product {
-    height: 100vh;
-    display: flex;
 }
 
 .product-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .product {
     height: 300px;
@@ -113,8 +112,7 @@ nav {
 
 .product-card {
     width: 200px;
-    height: 350px;
-    margin: 30px auto;
+    margin: 30px;
 }
 
 .product-card a{
@@ -148,4 +146,16 @@ nav {
     padding: 0 10px 0;
     margin: 0;
     font-family: 'Open Sans';
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 100px;
+    padding: 40px 50px;
+    font-family: 'Open Sans';
+}
+
+@media screen and (max-width: 900px ){
+
 }
