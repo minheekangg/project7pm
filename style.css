@@ -130,9 +130,9 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 .product-card a:hover{
-    background-color: lightgoldenrodyellow;
+    background-color: whitesmoke;
     /* color:white; */
-    border: 1px solid lightgoldenrodyellow;
+    /* border: 1px solid whitesmoke; */
 }
 
 .product-content {
