@@ -23,12 +23,10 @@ $(document).ready(function () {
         };
     }
 
-    $(".product").hover(debounce(function (e){
-        console.log(e.target.dataset.backimg)
+    $(".product").hover(function (e){
         $(this).css('background-image', 'url(' + e.target.dataset.backimg + ')')
-    }))
-    $(".product").mouseleave(debounce(function (e){
-        console.log(e.target.dataset.frontimg)
+    })
+    $(".product").mouseleave(function (e){
         $(this).css('background-image', 'url(' + e.target.dataset.frontimg + ')')
-    }))
+    })
 });
